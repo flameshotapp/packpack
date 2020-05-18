@@ -168,6 +168,7 @@ chcon -Rt svirt_sandbox_file_t ${PACKDIR} ${SOURCEDIR} ${BUILDDIR} \
 set -ex
 docker pull ${DOCKER_REPO}:${DOCKER_IMAGE}
 docker run \
+	--privileged \
         ${PACKPACK_EXTRA_DOCKER_RUN_PARAMS} \
         --volume "${PACKDIR}:/pack:ro" \
         --volume "${SOURCEDIR}:/source:ro" \
