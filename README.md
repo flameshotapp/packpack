@@ -43,7 +43,7 @@ Linux distribution.
 **Traditional tools**, like `mock` and `pbuilder`, were tremendously slow and
 ridiculously overcomplicated. Customers **had to wait hours** for hotfix
 packages and the project paid thousands of dollars annually for hardware and
-electricy bills. Such cost are unacceptable for the most "free as in speech"
+electricity bills. Such costs are unacceptable for most "free as in speech"
 open-source projects.
 
 **PackPack** has reduced __push-to-package__ time **from hours to minutes**.
@@ -315,6 +315,8 @@ see an example in [Tarantool GitHub](https://github.com/tarantool/tarantool) rep
    used to bump version in changelog files.
 * `DOCKER_REPO` - a Docker repository to use (default is `packpack/packpack`).
 * `CCACHE*` - Config variables for ccache, such as CCACHE_DISABLE
+* `PRESERVE_ENVVARS` - a comma separated list of environment variables to
+  preserve.
 
 See the full list of available options and detailed configuration guide in
 [pack/config.mk](pack/config.mk) configuration file.
